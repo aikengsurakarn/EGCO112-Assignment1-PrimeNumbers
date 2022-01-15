@@ -10,12 +10,16 @@
 int isPrime(int x)
 {
 	int i;
-
+  
+  if (x == 1)
+    {
+      return 0;
+    }
 	// Loop to check if x has any factor
 	// other than 1 and x itself
 	for (i = 2; i < x / 2 + 1; i++)
   {
-		if (x % i == 0)
+    if (x % i == 0)
     {
 			// Since i is a factor of x
 			// x is not prime

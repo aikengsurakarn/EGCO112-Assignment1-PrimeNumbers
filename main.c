@@ -76,8 +76,16 @@ int main(int argc, char* argv[])
       if (max>array[i+1]) max = max;
       else max = array[i+1];
     }
-    printf("The smallest prime is %d\n", min);
-    printf("The bigest prime is %d\n", max);
+    if(min==0&&max==0)
+    {
+      printf("No prime number\n");
+    }
+    else
+    {
+      printf("The smallest prime is %d\n", min);
+      printf("The bigest prime is %d\n", max);
+    }
+    
 	}
 	return 0;
 }
